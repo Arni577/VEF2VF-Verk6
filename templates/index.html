@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class="center_text">
+        <h1>{% block title %}Bensín stöðvar{% endblock %}</h1>
+        <nav>
+            {% for station in stations %}
+            <a href="/company/{{ station }}">
+                <div class="container">
+                    <img src="{{ url_for('static', filename='img/'+station+'.png') }}" height="130px" title="{{ station }}" alt="{{ station }}">
+                </div>
+            </a>
+            {% endfor %}
+        </nav>
+    </div>
+{% endblock %}

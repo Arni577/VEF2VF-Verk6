@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class="center_text">
+        <h1>{% block title %}{{ name }}{% endblock %}</h1>
+        <a href="/">Til baka</a>
+        <table id="stations" class="center" style="text-align:left;">
+            <tr>
+                <th>Name</th>
+                <th>Bensín</th>
+                <th>Dísel</th>
+            </tr>
+            {% for station in data %}
+                {% if station['company'] == name %}
+                    <tr>
+                        <td><a href="/station/{{ station['key'] }}">{{ station['name'] }}</a></td>
+                        <td>{{ station['bensin95'] }}</td>
+                        <td>{{ station['diesel'] }}</td>
+                    </tr>
+                {% endif %}
+            {% endfor %}
+        </table>
+        <a href="/">Til baka</a>
+    </div>
+{% endblock %}

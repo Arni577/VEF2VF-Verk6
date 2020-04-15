@@ -1,0 +1,88 @@
+body {
+    font-family: 'Ariel', sans-serif;
+    background-color: white;
+}
+h1{
+    color: lightblue;
+}
+a {
+    color: blue;
+    text-decoration: none;
+}
+nav div{
+    border: red;
+}
+
+footer {
+    margin-top: 5em;
+    padding: 15px 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.seitt{
+    margin-top:20px;
+    background-color: white;
+}
+.center_text {
+    text-align: center;
+}
+.cheap {
+    border: solid 2px;
+    border-color: black;
+    background-color: ornage;
+    margin-right: 30%;
+    margin-left: 30%;
+}
+
+.border {
+    border: orangered solid 2px;
+    border-radius: 20px;
+    width: 500px;
+    padding-bottom: 20px; 
+}
+
+.center {
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.container {
+    background-color: grey;
+    padding: 50px 0;
+    margin: 20px 25%;
+    border: solid 3px orangered;
+    border-radius: 30px;
+}
+
+
+#stations {
+    border-collapse: collapse;
+    width: 80%;
+}
+
+#stations td, #stations th {
+    border: 1px solid lightslategray;
+    padding: 8px;
+}
+
+#stations tr {
+    color: orange;
+}
+
+#stations tr:nth-child(even){background-color: lightgrey;}
+
+#stations th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: orangered;
+    color: blue;
+}
+
+.error {
+    color: orangered;
+    font-size: 80px;
+    margin-top: 15%;
+    margin-bottom: 15px;
+}

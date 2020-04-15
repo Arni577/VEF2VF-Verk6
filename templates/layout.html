@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+    <meta charset="UTF-16">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    {% block content %}{% endblock %}
+    <footer class="center_text">
+        <div class="cheap">
+            <h2>Besta verðið</h2>
+            <p>Ódýrasta bensínið er hjá {{ c_bensin['company'] }}, {{ c_bensin['name'] }}, {{ c_bensin['bensin95'] }} ISK .</p>
+            <p>Ódýrasta dísel olían er hjá {{ c_disel['company'] }}, {{ c_disel['name'] }}, {{ c_disel['bensin95'] }} ISK</p>
+            <p>Síðast uppfært: {{ tsDay }} KL. {{ tsHour }}</p>
+        </div>
+
+    </footer>
+</body>
+</html>

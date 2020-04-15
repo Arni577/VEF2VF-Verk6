@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class="border center center_text seitt">
+        <h1 class="center_text">{% block title %}{{ station['name'] }}{% endblock %}</h1>
+        <div class="center_text">
+            <h3>{{ station['company'] }}</h3>
+            <h2>Bensín verð: {{ station['bensin95'] }}kr</h2>
+            <h2>Dísel verð: {{ station['diesel'] }}kr</h2>
+        </div>
+        <a href="/company/{{ station['company'] }}">Til baka</a>
+    </div>
+{% endblock %}
